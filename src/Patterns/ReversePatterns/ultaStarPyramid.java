@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.ReversePatterns;
 
 import java.util.Scanner;
 

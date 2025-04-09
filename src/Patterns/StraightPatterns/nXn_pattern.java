@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.StraightPatterns;
 
 import java.util.Scanner;
 
