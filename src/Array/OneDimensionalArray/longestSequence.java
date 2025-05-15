@@ -1,4 +1,4 @@
-package Array;
+package Array.OneDimensionalArray;
 
 import java.util.HashSet;
 import java.util.Scanner;

@@ -1,7 +1,5 @@
-package Array;
+package Array.OneDimensionalArray;
 
-import javax.lang.model.type.ArrayType;
-import javax.swing.plaf.IconUIResource;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;

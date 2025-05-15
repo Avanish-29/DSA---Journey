@@ -1,7 +1,5 @@
-package Array;
+package Array.OneDimensionalArray;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class majorityElement {

@@ -1,8 +1,8 @@
-package Array;
+package Array.OneDimensionalArray;
 
 import java.util.Scanner;
 
-public class kadaneAlgo {
+public class buyAndSellStocks {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number of element in the array: ");
@@ -12,21 +12,19 @@ public class kadaneAlgo {
             System.out.println("Enter the value at " + i + "th position: ");
             arr[i] = input.nextInt();
         }
-        System.out.println("The maximum sum of the subarray is : " + maximumSubarraySum(arr));
+        System.out.println("Maximum profit could be : " + profit(arr));
     }
-    public static int maximumSubarraySum(int[] arr){
-        int max = Integer.MIN_VALUE;
-        int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
-            if(sum > max){
-                max = sum;
+    public static int profit(int[] prices){
+        int buy = Integer.MAX_VALUE;
+        int profit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if(prices[i]<buy){
+                buy = prices[i];
             }
-            if (sum < 0) {
-                sum = 0;
+            else if(prices[i]-buy > profit){
+                profit = prices[i]-buy;
             }
-
         }
-        return max;
+        return profit;
     }
 }
